@@ -1,0 +1,84 @@
+<body style="background-color: whight">
+<div style="text-align: center;"><br>
+<br>
+<big><big><img src="logoxx.jpeg" style="width: 150px;height: 110px"><font color="green"><i><br/>"For the journey that is life"<i></h2></center></font><br>
+<br>
+<center><fieldset style="width:650px">
+<font color="red"><legend><u>New User Registeration</u></legend><br>
+<br>
+</big></big>
+<form method="post" action="JavaScript:printmessage()">
+  <table width="30%">
+    <tbody>
+      <tr>
+        <td style="text-align: left;"><font color="black"><b>FIRST_NAME:</b><br></font>
+        </td>
+        <td><input name="first name" type="text"><br>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: left;"><font color="black"><b>LAST_NAME:</b><br></font>
+        </td>
+        <td><input name="last name" type="text"><br>
+        </td>
+      </tr>
+	  <tr>
+        <td style="text-align: left;"><font color="black"><b>USERNAME:</b><br></font>
+        </td>
+        <td><input name="username" type="text"><br>
+        </td>
+      </tr>
+	  <tr>
+    <tr>
+        <td style="text-align: left;"><font color="black"><b>
+            Password:<br/></b></font>
+        </td>
+        <td>
+            <input type="password" id="txtPassword" />
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align: left;"><font color="black"><b>
+
+            Confirm_Password:<br/></b></font>
+        </td>
+        <td>
+
+            <input type="password" id="txtConfirmPassword" />
+        </td>
+    </tr>
+	<tr>
+        <td>
+        </td>
+        <td>
+		<br/>
+		<br/>
+            <input type="button" id="btnSubmit" value="REGISTER" onclick="return Validate()"/>
+		</td>
+		</tr>
+</table>
+<script type="text/javascript">
+    function Validate() {
+
+        var password = document.getElementById("txtPassword").value;
+
+        var confirmPassword = document.getElementById("txtConfirmPassword").value;
+
+        if (password != confirmPassword) {
+
+            alert("Passwords are not same");
+
+            return false;
+        }
+		else
+		{
+		alert("Registered Successfully, Now You Can Login, Thank You!!!")
+        return true;
+		}
+    }
+</script>
+  </center>
+</form>
+<big><big><br>
+</big></big>
+</div>

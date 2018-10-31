@@ -1,0 +1,170 @@
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Schedule An Appointment</title>
+<style>
+div {background-color:black;}
+div a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    display:inline-block;
+}
+
+
+ a {
+    display: inline-block;
+   
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+div a:hover {
+    background-color: blue;
+}
+
+
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+.main{
+  height:auto;
+  width:100%;
+  background-color:white;
+}
+
+#abc{
+height:90px;
+background-color:transparent;
+}
+
+
+#qwe
+{ 
+position : absolute;
+left : 0px;
+ }
+ 
+#ert
+{
+position : absolute;
+right : 0px;
+}
+
+</style>
+<div id="abc">
+  
+  <img id ="qwe" src="medanta pics.png" height="90",width="40">
+  <img id ="ert" src="hotline.JPG" height="90" , width="250">
+</div>
+<center>
+
+<div>
+  <a href="aboutus.html">About Medanta</a>
+  <a href="ourdoctor.html">Our Doctors</a>
+  <a href="patientcare.html">Patient Care</a>
+  <a href="contactus.html">Contact Us</a>
+</div>
+</center>
+</head>
+<body>
+
+<script type="text/javascript">
+function validate()
+{
+var a=document.forms["formss"]["patient"].value;
+var b=document.forms["formss"]["name"].value;
+var c=document.forms["formss"]["occupation"].value;
+var d=document.forms["formss"]["doctor"].value;
+var e=document.forms["formss"]["number"].value;
+var f=document.forms["formss"]["address"].value;
+var g=document.forms["formss"]["email"].value;
+if(a=="")
+{alert("Fill Patient id");
+
+return false;
+}
+else if(b=="")
+{alert("Enter your Fullname");
+
+return false;
+}
+else if(c=="")
+{alert("Fill your Occupation");
+
+return false;
+}
+else if(d=="")
+{alert("Fill Doctors name");
+
+return false;
+}
+else if(e=="")
+{alert("Enter your Contact Number");
+
+return false;
+}
+else if(f=="")
+{alert("Enter your present address");
+
+return false;
+}
+else if(g=="")
+{alert("Email can't be empty");
+
+return false;
+}
+else{
+call();
+}
+}
+function call()
+{
+alert("form submitted succesfully");
+}
+</script>
+<fieldset>
+<legend><b>Personal Info: </b></legend>
+<div class="main">
+
+<div class="form">
+<form method="post" name="formss" align="center" return onsubmit="return validate()" color="white"> <br><br><br>
+<label  for="1" color="red"><font color="red">Patient ID:</label>
+<input type="text" name="patient" id="1"><br><br>
+<label  for="2">Fullname :</label>
+<input type="text" name="name"id="2"><br><br>
+<label  for="3">Age :</label>
+<input type="number" name="age" min="1"id="3" ><br><br>
+<label>Sex  &nbsp; &nbsp;:</label>
+Male<input type ="radio" name ="r1">
+Female<input type ="radio" name="r1"></br><br>
+<label  for="4">Occupation :</label>
+<input type="text" name="occupation"id="4"><br><br>
+<label  for="5">Visiting Doctor :</label>
+<input type="text" name="doctor"id="5"><br><br>
+<label  for="6">Contact No :</label>
+<input type="tel" name="number"id="6" maxlength="10"><br><br>
+<label  for="7">Address :</label>
+<textarea row="450px" col="400px" id="7" name="address"></textarea><br><br>
+<label  for="8">Email &nbsp; &nbsp; &nbsp;:</label>
+<input type="email" name="email" id="8" ><br><br></font>
+
+<input type="submit" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="reset"></font>
+<br><br><br><br>
+</div>
+</form>
+</fieldset>
+
+  </body>
+  <p><center>
+Copyright &copy; 2018,  All rights reserved
+</p>
+</center>
+
+</footer>
+</body>
+</html>
